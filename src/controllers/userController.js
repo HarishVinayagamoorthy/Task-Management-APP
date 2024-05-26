@@ -169,7 +169,7 @@ const resetpassword = async (req, res) => {
       },
     });
     // const resetUrl = `${`https://forgotpassword-reset.netlify.app/resetpassword`}`;
-    const resetUrl = `${`http://localhost:5173/resetpassword`}`;
+    const resetUrl = `${`https://task-management-site.netlify.app/resetpassword`}`;
 
     const mailOptions = {
       from: "harishvinayagamoorthi@gmail.com",
