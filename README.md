@@ -1,25 +1,53 @@
-# MERN Password Reset Project
+# Task Management App
 
-This is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) project that includes user authentication with JWT tokens and password reset functionality using Nodemailer.
+## Overview
+
+The Task Management App is a web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It is designed to facilitate task management within an organization, providing different functionalities for administrators and employees through separate panels.
+
+### Password
+ - Admin email: harishvinayagamoorthy123@gmail.com
+ - Admin Password: @123456
+ - Employee email: harishvinayagamoorthi@gmail.com
+ - Employee password: 123456
+
+
 
 ## Features
 
-- User Registration and Login with JWT authentication.
-- Password reset using Nodemailer.
-- Secure password storage using hashing.
-- MongoDB as the database.
-- React.js for the frontend.
+### Admin Panel
+- **Employee Management:**
+  - Create, delete, edit, and read employee details.
+- **Task Assignment:**
+  - Assign tasks to employees and view the assigned tasks for each employee.
+- **Task Status Tracking:**
+  - Tasks can have three statuses: Pending, Progressing, and Submitted.
+  - Initially, tasks are in the Pending status.
+  - View the status of each task and the time when the task was started.
 
-## Prerequisites
+### Employee Panel
+- **View Assigned Tasks:**
+  - Employees can view the tasks assigned to them by the admin.
+- **Task Management:**
+  - Start a task by clicking the "Start Work" button, which records the start time and changes the task status to Progressing.
+  - Once the task is started, a timer will run on the same field with a "Submit" button instead of the "Start Work" button.
+  - Submit a task upon completion to change the task status to Submitted.
 
-Before you begin, ensure you have met the following requirements:
+### Authentication and Authorization
+- **Login and Signup:**
+  - Role-based authentication with JWT token for secure access.
+- **Forgot Password:**
+  - Functionality implemented using the Node Mailer package to reset passwords.
 
-- Node.js and npm installed.
-- MongoDB installed and running.
+## Technologies Used
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Token)
+- **Email Service:** Node Mailer
 
-## Getting Started
+## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/HarishVinayagamoorthy/Password-Reset
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/HarishVinayagamoorthy/Task-Management-APP.git
+   cd task-management-app
